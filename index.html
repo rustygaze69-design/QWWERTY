@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calling — Demo Landing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">GAZELLE • RUSTY</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#artists">Artists</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <button class="cta small" onclick="scrollToId('tracks')">Listen</button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-media">
+      <!-- Replace VIDEO_ID with a YouTube video id (e.g., iWDxMpLvaUE) -->
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&showinfo=0&color=white"
+        title="Hero Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="hero-copy">
+      <h1>CALLING — Demo</h1>
+      <p>A cinematic landing inspired by bold neon gradients and high‑contrast typography.</p>
+      <div class="cta-row">
+        <button class="cta" onclick="scrollToId('tracks')">Play Track</button>
+        <button class="ghost" onclick="scrollToId('artists')">View Artists</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="artists" class="section">
+    <h2>Featured Artists</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="avatar">MB</div>
+        <h3>Metro Boomin</h3>
+        <p>Producer • Vision • Cinematic sound.</p>
+      </article>
+      <article class="card">
+        <div class="avatar">SL</div>
+        <h3>Swae Lee</h3>
+        <p>Melody craftsman • Hooks and vibes.</p>
+      </article>
+      <article class="card">
+        <div class="avatar">NAV</div>
+        <h3>NAV</h3>
+        <p>Flows • Atmosphere • Minimal bounce.</p>
+      </article>
+      <article class="card">
+        <div class="avatar">AB</div>
+        <h3>A Boogie</h3>
+        <p>Melodic rap • NYC energy.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="tracks" class="section alt">
+    <h2>Tracks</h2>
+    <ul class="tracklist">
+      <li>
+        <span>01</span>
+        <div>
+          <strong>Calling — Demo Cut</strong>
+          <small>3:40</small>
+        </div>
+        <button class="pill">Play</button>
+      </li>
+      <li>
+        <span>02</span>
+        <div>
+          <strong>Neon Chase</strong>
+          <small>2:58</small>
+        </div>
+        <button class="pill">Play</button>
+      </li>
+      <li>
+        <span>03</span>
+        <div>
+          <strong>Across The City</strong>
+          <small>3:21</small>
+        </div>
+        <button class="pill">Play</button>
+      </li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Demo UI for learning purposes — replace copy, colors, and media as needed.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
